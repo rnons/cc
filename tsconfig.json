@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES6",
+    "lib": ["dom", "dom.iterable", "es7"],
+    "jsx": "React",
+    "strict": true
+  }
+}

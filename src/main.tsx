@@ -36,6 +36,21 @@ class App extends React.Component<{}, State> {
     });
   };
 
+  // TODO: implemnet UI for editing
+  handleEdit = (contract: Contract, input: ContractInput) => {
+    const contracts: Array<Contract> = this.state.contracts;
+    const index = contracts.findIndex(c => c.id === contract.id);
+    ContractStore.editContract(contract, input).then(edited => {
+      this.setState({
+        contracts: [
+          ...contracts.slice(0, index),
+          edited,
+          ...contracts.slice(index + 1)
+        ]
+      });
+    });
+  };
+
   render() {
     return (
       <div className="app">

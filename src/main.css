@@ -1,0 +1,23 @@
+body {
+  padding: 0;
+}
+
+.app {
+  display: grid;
+  grid-template:
+    "chart chart form" 1fr
+    "table table table" 1fr;
+  height: 100vh;
+}
+
+.chart {
+  grid-area: chart;
+}
+
+.form {
+  grid-area: form;
+}
+
+.table {
+  grid-area: table;
+}

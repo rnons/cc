@@ -23,3 +23,11 @@
   grid-area: table;
   overflow-y: auto;
 }
+
+.app-table table {
+  width: 100%;
+}
+
+.app-table td {
+  border: 1px solid config('colors.grey');
+}

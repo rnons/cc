@@ -9,10 +9,12 @@
     "start": "NODE_ENV=development webpack-dev-server --progress"
   },
   "dependencies": {
+    "chart.js": "^2.7.3",
     "react": "^16.6.1",
     "react-dom": "^16.6.1"
   },
   "devDependencies": {
+    "@types/chart.js": "^2.7.40",
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
     "awesome-typescript-loader": "^5.2.1",

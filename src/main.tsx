@@ -3,14 +3,29 @@ import * as ReactDOM from "react-dom";
 
 import "./main.css";
 
-const App = () => {
-  return (
-    <div className="app">
-      <div className="chart">chart</div>
-      <div className="form">form</div>
-      <div className="table">table</div>
-    </div>
-  );
-};
+import ContractForm from "./components/ContractForm";
+import ContractTable from "./components/ContractTable";
+
+class App extends React.Component {
+  state = {
+    contracts: []
+  };
+
+  handleSubmit = () => {
+    this.setState({
+      contracts: [...this.state.contracts, Date.now()]
+    });
+  };
+
+  render() {
+    return (
+      <div className="app">
+        <div className="app-chart">chart</div>
+        <ContractForm onSubmit={this.handleSubmit} />
+        <ContractTable contracts={this.state.contracts} />
+      </div>
+    );
+  }
+}
 
 ReactDOM.render(<App />, document.getElementById("app"));

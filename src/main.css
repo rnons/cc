@@ -1,5 +1,5 @@
 body {
-  padding: 0;
+  margin: 0;
 }
 
 .app {
@@ -10,14 +10,16 @@ body {
   height: 100vh;
 }
 
-.chart {
+.app-chart {
   grid-area: chart;
 }
 
-.form {
+.app-form {
   grid-area: form;
+  overflow-y: auto;
 }
 
-.table {
+.app-table {
   grid-area: table;
+  overflow-y: auto;
 }

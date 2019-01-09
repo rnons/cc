@@ -9,10 +9,12 @@
     "start": "NODE_ENV=development webpack-dev-server --progress"
   },
   "dependencies": {
+    "draft-js": "^0.10.5",
     "react": "^16.6.1",
     "react-dom": "^16.6.1"
   },
   "devDependencies": {
+    "@types/draft-js": "^0.10.27",
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
     "awesome-typescript-loader": "^5.2.1",

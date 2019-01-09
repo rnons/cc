@@ -1,3 +1,12 @@
 @import "tailwindcss/preflight";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.DraftEditor-root {
+  border: 1px solid grey;
+  @apply p-4;
+}
+
+.public-DraftEditor-content {
+  height: 10rem;
+}

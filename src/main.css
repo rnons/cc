@@ -10,3 +10,19 @@
 .public-DraftEditor-content {
   height: 10rem;
 }
+
+.AutocompleteList {
+  position: absolute;
+  background: white;
+  max-height: 15rem;
+  max-width: 25rem;
+  @apply list-reset shadow-md overflow-y-auto;
+}
+
+.AutocompleteListItem {
+  @apply px-3 py-1 truncate;
+}
+
+.AutocompleteListItem.current {
+  background: lightgrey;
+}

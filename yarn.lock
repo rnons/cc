@@ -1320,6 +1320,11 @@ dot-prop@^4.1.1:
   dependencies:
     is-obj "^1.0.0"
 
+draft-js-autocomplete@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/draft-js-autocomplete/-/draft-js-autocomplete-1.0.3.tgz#9b83cb5b6ed18ffa1bcc696ce7c098e4a53fe9fb"
+  integrity sha512-dvzIdAS6DdRNWeDvTTe1tDmyIr/dxbh+brO5tbvsxBxsLQ5oIClE6POllLxPxGVQ4c2Ccg1z+8uYFXmh9tlsCg==
+
 draft-js@^0.10.5:
   version "0.10.5"
   resolved "https://registry.yarnpkg.com/draft-js/-/draft-js-0.10.5.tgz#bfa9beb018fe0533dbb08d6675c371a6b08fa742"
